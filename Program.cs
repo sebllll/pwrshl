@@ -25,6 +25,6 @@ public class PowerShellHelpers
             ps_output = ps.Invoke();
         }
 
-        return Int32.Parse(ps_output.FirstOrDefault().ToString()); ;
+        return Int32.Parse(ps_output.FirstOrDefault().ToString());
     }
 }

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="QeuOvgC6fTmL02eYDmTl04" LanguageVersion="2024.6.0-0003-g026cb960e6" Version="0.128">
-  <NugetDependency Id="JbC0lldesdRNASwJuZtaWb" Location="VL.CoreLib" Version="2024.6.0-0003-g026cb960e6" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="QeuOvgC6fTmL02eYDmTl04" LanguageVersion="2024.6.0-0006-g7501f96c68" Version="0.128">
+  <NugetDependency Id="JbC0lldesdRNASwJuZtaWb" Location="VL.CoreLib" Version="2024.6.0-0006-g7501f96c68" />
   <Patch Id="S7CCrLzgWaQMW7QalmJGjM">
     <Canvas Id="OcoWD3hDkUALbcgNE47kfY" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -20,7 +20,7 @@
     ************************ StartProcess (PowerShell) ************************
 
 -->
-          <Node Name="StartProcess (PowerShell)" Bounds="448,422" Id="VSz86j2ogCSOSb5pvVIYmY">
+          <Node Name="StartProcess (PowerShell)" Bounds="207,179" Id="VSz86j2ogCSOSb5pvVIYmY">
             <p:NodeReference>
               <Choice Kind="ContainerDefinition" Name="Process" />
               <FullNameCategoryReference ID="Primitive" />
@@ -214,22 +214,6 @@
                 <ControlPoint Id="G9kiBWaWe3VOBbDl6VLO5m" Bounds="144,157" />
                 <ControlPoint Id="HrIc0tBTDmoM89ySYUjJtj" Bounds="285,857" />
                 <ControlPoint Id="Ly3CCyC2JepMtHamAHbJ8k" Bounds="192,901" />
-                <Pad Id="CSvgFAIikc8PVtbP5boVuY" Comment="Force" Bounds="96,366,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                    <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
-                  </p:TypeAnnotation>
-                  <p:ValueBoxSettings>
-                    <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
-                  </p:ValueBoxSettings>
-                </Pad>
-                <Pad Id="BLQqmFwMHG2Lqg0v27fNcw" Comment="Start" Bounds="87,254,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                    <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
-                  </p:TypeAnnotation>
-                  <p:ValueBoxSettings>
-                    <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
-                  </p:ValueBoxSettings>
-                </Pad>
                 <Pad Id="A2SOvGYb30mOlhTmp9Pp7G" Comment="" Bounds="250,270,35,15" ShowValueBox="true" isIOBox="true" />
               </Canvas>
               <ProcessDefinition Id="OZH8RDqOWosLD7OnNRm7jH">
@@ -271,37 +255,15 @@
                   </p:TypeAnnotation>
                 </Pin>
               </Patch>
-              <Link Id="HNiCPLP8pybLbBU4o7naHz" Ids="G9kiBWaWe3VOBbDl6VLO5m,BLQqmFwMHG2Lqg0v27fNcw" />
               <Link Id="Um9wNMDmaM4MQXkXY8zre2" Ids="Motyt8OThbvNucKeVLKbts,PgsLK9hupsANgsZTfAzFiK" />
-              <Link Id="C1BphqKJjciK91K3zyFfSF" Ids="CSvgFAIikc8PVtbP5boVuY,VYtOOTLkWNeP7BqIP1GtRn" />
               <Link Id="T36X9R4ENU4MYlbZHHvzPr" Ids="CVr4scsDrF5Pl0QOI0fXZ6,A2SOvGYb30mOlhTmp9Pp7G" />
+              <Link Id="QlyAaWmJo5DO6k05X81vTQ" Ids="G9kiBWaWe3VOBbDl6VLO5m,VYtOOTLkWNeP7BqIP1GtRn" />
             </Patch>
           </Node>
-          <Pad Id="RDO6Pd5KR4NLKoFIPGnEEE" Comment="Process" Bounds="298,527,540,33" ShowValueBox="true" isIOBox="true" Value="C:\vvvv\vvvv_gamma_5.3-0432-gebaa53fdbe\vvvv.exe --allowmultiple">
+          <Pad Id="RDO6Pd5KR4NLKoFIPGnEEE" Comment="Process" Bounds="342,202,540,33" ShowValueBox="true" isIOBox="true" Value="C:\vvvv\vvvv_gamma_5.3-0432-gebaa53fdbe\vvvv.exe --allowmultiple">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
-          </Pad>
-          <Node Bounds="429,684,45,19" Id="EHmhGJ2BWbtPi5n2gRJjnQ">
-            <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="StringType" Name="String" />
-              <Choice Kind="OperationCallFlag" Name="Split (String)" />
-            </p:NodeReference>
-            <Pin Id="Iftg7lZfYNMP0KjrgUAYed" Name="Input" Kind="StateInputPin" />
-            <Pin Id="Cl1C4HKytu9Njx4idCqkXe" Name="Separator" Kind="InputPin" />
-            <Pin Id="DuRnL4LQBP5QB7s2XcBg2b" Name="Options" Kind="InputPin" />
-            <Pin Id="MBxinDBMiC2MqNqFJXofla" Name="Output" Kind="StateOutputPin" />
-          </Node>
-          <Pad Id="VhkSBcvhxgUQTWx6cTvWId" Comment="Separator" Bounds="449,635,35,15" ShowValueBox="true" isIOBox="true" Value=" --">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="JiZtGtmNVXMMeDx4k5e0wc" Comment="" Bounds="429,760,323,80" ShowValueBox="true" isIOBox="true">
-            <p:Value>
-              <Item></Item>
-            </p:Value>
           </Pad>
           <Node Bounds="287,680,72,19" Id="RX7YbUN1uI8LqdHa1HyB3v">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="PWRSHL.vl">
@@ -325,7 +287,7 @@
           </Pad>
           <Pad Id="RnOi5ltZAbYLUyHAkS08Cs" Comment="Success" Bounds="241,763,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="MnMn6tqc5unL8skzA4sZB8" Comment="PID" Bounds="333,800,35,15" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="541,282,365,19" Id="F5qVGqJEC10LnjyFT7SYA1">
+          <Node Bounds="324,501,365,19" Id="F5qVGqJEC10LnjyFT7SYA1">
             <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="+" />
@@ -335,19 +297,19 @@
             <Pin Id="O4hToDJhodBNhK0sjjoLxP" Name="Output" Kind="OutputPin" />
             <Pin Id="LspaMCOF6MAPhKO8KLJ0Og" Name="Input 3" Kind="InputPin" />
           </Node>
-          <Pad Id="IFeFBCSVubTLvyN3HxeRhz" Comment="" Bounds="543,262,134,15" ShowValueBox="true" isIOBox="true" Value="$process = start-process ">
+          <Pad Id="IFeFBCSVubTLvyN3HxeRhz" Comment="" Bounds="326,481,134,15" ShowValueBox="true" isIOBox="true" Value="$process = start-process ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="String" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="KNucw57ThwrMsTdq01pfjY" Comment="" Bounds="903,262,134,15" ShowValueBox="true" isIOBox="true" Value=" -passthru; $process.id">
+          <Pad Id="KNucw57ThwrMsTdq01pfjY" Comment="" Bounds="686,481,134,15" ShowValueBox="true" isIOBox="true" Value=" -passthru; $process.id">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="String" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="UrVEIrD1T09NjUHWKfnxim" Comment="" Bounds="582,336,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="UrVEIrD1T09NjUHWKfnxim" Comment="" Bounds="365,555,35,15" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="QVyy5mWjtDLMEXBIPqlTaa" Name="Create" />
         <Patch Id="T4DM04HWPNfOQHMq1Nq3nF" Name="Update" />
@@ -355,19 +317,16 @@
           <Fragment Id="D1Z4jsR2vcdOLUu9JEzuxK" Patch="QVyy5mWjtDLMEXBIPqlTaa" Enabled="true" />
           <Fragment Id="LjrBdtrvBUNMvMy1DrBGV7" Patch="T4DM04HWPNfOQHMq1Nq3nF" Enabled="true" />
         </ProcessDefinition>
-        <Link Id="U4SiEXOVfBzPcoxFTsYNwp" Ids="VhkSBcvhxgUQTWx6cTvWId,Cl1C4HKytu9Njx4idCqkXe" />
-        <Link Id="OuO92w0OCF4MBrQYLVIjYn" Ids="RDO6Pd5KR4NLKoFIPGnEEE,Iftg7lZfYNMP0KjrgUAYed" />
-        <Link Id="N6Yr18klJ07PSh1w2Nxyui" Ids="MBxinDBMiC2MqNqFJXofla,JiZtGtmNVXMMeDx4k5e0wc" />
         <Link Id="TqbwDAIqGeCO1q4qIGGp0E" Ids="TspheUlr0pUM0gC28EYa4x,RoP1DCDjcDKLHouCFUhxCv" />
-        <Link Id="FWXMxiITTZJNYVrZmEN8Fj" Ids="RDO6Pd5KR4NLKoFIPGnEEE,QtvZhxL9PnsNJd7IvflkS9" />
         <Link Id="KLhaVzU4ITvLXy25tKbGZE" Ids="MKvjHTeCeMxNWUQBGZrnmH,RnOi5ltZAbYLUyHAkS08Cs" />
         <Link Id="PsOxUlwSdCHMHj5AJxFy4T" Ids="Qg1lrJ1iJf8NTieYzAgwWh,MnMn6tqc5unL8skzA4sZB8" />
         <Link Id="ESltreaxWy9Lc0xJEXy5SO" Ids="IFeFBCSVubTLvyN3HxeRhz,UqDC2W2DIlkN38lHwS0ULl" />
         <Link Id="EJ8tWo6q2EnNafsytUvdcB" Ids="KNucw57ThwrMsTdq01pfjY,LspaMCOF6MAPhKO8KLJ0Og" />
         <Link Id="MHNMBDfW3qhLkHs2o8b3Pb" Ids="O4hToDJhodBNhK0sjjoLxP,UrVEIrD1T09NjUHWKfnxim" />
         <Link Id="SG9POk2yhOULyIdyYYyJ6B" Ids="RDO6Pd5KR4NLKoFIPGnEEE,AJncNiDvRV9OH4ItB4Vu21" />
+        <Link Id="G1F4pcWc1l8MHUnpKAfcJG" Ids="O4hToDJhodBNhK0sjjoLxP,QtvZhxL9PnsNJd7IvflkS9" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Bf40yC4ziXINOzlyUn8ZH6" Location="Microsoft.PowerShell.SDK" Version="7.4.1" />
+  <NugetDependency Id="PvIlBBfgk6iLw75NAOFf29" Location="Microsoft.PowerShell.SDK" Version="7.4.1" />
 </Document>
